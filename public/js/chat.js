@@ -71,14 +71,7 @@ $(function(){
                 if(name.length < 1){
                     alert("Please enter a nick name longer than 1 character!");
                     return;
-                }
-
-                email = yourEmail.val();
-
-                if(!isValid(email)) {
-                    alert("Please enter a valid email!");
-                }
-                else {
+                } else {
 
                     showMessage("inviteSomebody");
 
@@ -107,13 +100,7 @@ $(function(){
                 if(name == data.user){
                     alert("There already is a \"" + name + "\" in this room!");
                     return;
-                }
-                email = hisEmail.val();
-
-                if(!isValid(email)){
-                    alert("Wrong e-mail format!");
-                }
-                else {
+                } else {
                     socket.emit('login', {user: name, avatar: email, id: id});
                 }
 
@@ -252,12 +239,6 @@ $(function(){
 
     function scrollToBottom(){
         $("html, body").animate({ scrollTop: $(document).height()-$(window).height() },1000);
-    }
-
-    function isValid(thatemail) {
-
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(thatemail);
     }
 
     function showMessage(status,data){
