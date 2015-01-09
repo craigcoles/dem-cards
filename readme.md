@@ -10,6 +10,6 @@ Pull down and run
 
 ## Run
 
-Once you have run `npm install` you are ready to play dem cards
+Once you have run `npm install`, you are ready to play dem cards
 
     nodemon -e js,css,html,ejs
