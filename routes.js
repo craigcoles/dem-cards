@@ -13,8 +13,8 @@ module.exports = function(app,io){
 
     app.get('/', function(req, res){
 
-        // Render views/home.html
-        res.render('home');
+        // Render views/home.ejs
+        res.render('home.ejs');
     });
 
     app.get('/create', function(req,res){
@@ -28,8 +28,8 @@ module.exports = function(app,io){
 
     app.get('/chat/:id', function(req,res){
 
-        // Render the chant.html view
-        res.render('chat');
+        // Render the chant.ejs view
+        res.render('chat.ejs');
     });
 
     // Initialize a new socket.io application, named 'chat'
