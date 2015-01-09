@@ -13,6 +13,7 @@
     <title>Private chat room | Tutorialzine Demo</title>
 
     <link type="text/css" rel="stylesheet" href="../css/stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="../css/application.css" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans Condensed:300italic,300,700" rel="stylesheet" type="text/css">
 
 
@@ -20,20 +21,14 @@
 
 <body>
 
-    <header class="banner">
-
-        <h1 class="bannertext">
-            <a href="http://tutorialzine.com/2014/03/nodejs-private-webchat/" id="logo">Tutorial<span>zine</span>: NODE.JS CHAT TUTORIAL</a>
-        </h1>
-
-    </header>
+    <header></header>
 
 
     <section class="section">
 
         <!-- These elements are displayed as white info cards in the middle of the screen -->
 
-        <div class="connected">
+        <div class="connected info__message">
 
             <img src="../img/unnamed.jpg" id="creatorImage" />
 
@@ -50,7 +45,7 @@
 
         </div>
 
-        <div class="personinside">
+        <div class="personinside info__message">
 
             <img src="../img/unnamed.jpg" id="ownerImage" />
 
@@ -60,7 +55,6 @@
 
                 <form class="loginForm">
                     <input type="text" id="hisName" placeholder="Your nick name" /><br/>
-                    <input type="text" id="hisEmail" placeholder="Your email address" /><br/>
                     <input type="submit" id="hisEnter" value="CHAT" />
                 </form>
 
@@ -68,7 +62,7 @@
 
         </div>
 
-        <div class="invite-textfield">
+        <div class="invite-textfield info__message">
 
             <h2>Oops, there are no other people in this chat!</h2>
             <h5>Invite a friend by sending them this URL</h5>
@@ -79,7 +73,7 @@
 
         </div>
 
-        <div class="left">
+        <div class="left info__message">
 
             <img src="../img/unnamed.jpg" id="leftImage" />
 
@@ -90,14 +84,14 @@
 
         </div>
 
-        <div class="toomanypeople">
+        <div class="toomanypeople info__message">
 
             <h2>Oops, you can not join this chat!</h2>
             <h5>There are already two people in it. Would you like to create a <a title="New Room" href="/create" id="room">new room</a>?</h5>
 
         </div>
 
-        <div class="nomessages">
+        <div class="nomessages info__message">
 
             <img src="../img/unnamed.jpg" id="noMessagesImage" />
 

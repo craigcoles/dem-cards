@@ -26,35 +26,7 @@ body {
 
 /* ------ Home ------ */
 
-
-.homebanner {
-    height: 120px;
-    background-color: #3c4446;
-}
-
-.homebannertext {
-    text-align:center;
-    padding-top: 35px;
-    font-family: 'Open Sans Condensed',serif;
-    font-weight: bold;
-    color:white;
-}
-.homebannertext span {
-    color: #d6441b;
-}
-
-#logo {
-    text-decoration: none;
-    color:white;
-}
-#logo:visited {
-    color: white;
-}
-
-
-
 /* ------ Invite ------ */
-
 
 .banner {
     height: 70px;
@@ -346,7 +318,6 @@ body {
     border-radius: 3px;
     box-shadow:0px 3px 3px #e3e4e6;
     color: #637277;
-    margin-bottom: 400px;
 }
 .left h2 {
     padding-top: 50px;
@@ -411,7 +382,6 @@ body {
     border-radius: 3px;
     box-shadow:0px 3px 3px #e3e4e6;
     color: #637277;
-    margin-bottom: 400px;
 }
 .nomessages h2 {
     padding-top: 50px;
