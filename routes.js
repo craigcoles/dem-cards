@@ -17,6 +17,15 @@ module.exports = function(app,io){
         res.render('home.ejs');
     });
 
+    app.get('/styleguide', function(req, res){
+
+        // Render views/styleguide.ejs
+        res.render('styleguide.ejs', {
+            styleguide: true
+        });
+        
+    });
+
     app.get('/create', function(req,res){
 
         // Generate unique id for the room
