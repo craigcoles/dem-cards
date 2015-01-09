@@ -17,6 +17,7 @@
     "ejs-locals": "^1.0.2",
     "express": "^4.8.2",
     "gravatar": "~1.0.6",
+    "node-sass-middleware": "^0.4.0",
     "nodemon": "^1.2.1",
     "socket.io": "^1.0.6"
   }

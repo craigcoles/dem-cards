@@ -4,7 +4,10 @@
 var express = require('express');
     path = require('path');
     engine = require('ejs-locals');
+    sassMiddleware = require('node-sass-middleware');
 
+var srcPath = __dirname + '/assets/sass';
+var destPath = __dirname + '/public/css';
 
 module.exports = function(app, io){
 
@@ -22,7 +25,12 @@ module.exports = function(app, io){
     // Use the layout for the views
     app.set( 'view options', { layout:'layout.ejs' } );
 
-    // Make the files in the public folder available to the world
-    app.use( express.static( path.join(__dirname, '/public') ) );
+    app.use(sassMiddleware({
+        src: srcPath,
+        dest: destPath,
+        debug: true,
+        outputStyle: 'compressed',
+        prefix: '/css'
+    }), express.static( path.join(__dirname, 'public') ) );
 
 };
