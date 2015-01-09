@@ -1,7 +1,5 @@
 # Dem Cards
 
-- - -
-
 > "You can shuffle my deck any day!" *- Bruce Forsyth*
 
 ## Install
