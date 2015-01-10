@@ -4,7 +4,7 @@
 
 ## Install
 
-Pull down and run 
+Pull down and run
 
     npm install
 
@@ -13,3 +13,5 @@ Pull down and run
 Once you have run `npm install`, you are ready to play dem cards
 
     nodemon -e js,css,html,ejs
+
+    test edit
