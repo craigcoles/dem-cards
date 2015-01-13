@@ -29,7 +29,7 @@ module.exports = function(app, io){
         src: srcPath,
         dest: destPath,
         debug: true,
-        outputStyle: 'compressed',
+        outputStyle: 'expanded',
         prefix: '/css'
     }), express.static( path.join(__dirname, 'public') ) );
 

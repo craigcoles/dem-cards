@@ -1,0 +1,63 @@
+.card {
+  
+  position: relative;
+  float:left;
+  width:222px;
+  height:311px;
+  margin:5px;
+  border-radius:10px;
+
+  &--black {
+    background-color:#000;
+    color:#fff;
+  }
+
+  &--white{
+  	background-color:#fff;
+    color:#000;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,1);
+  }
+
+	&:hover {
+		& .card__front {display:none;}
+		& .card__back {display:block;}
+	}
+
+	&__front,
+	&__back {
+		width:100%;
+		height:100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding:25px;
+	}
+
+  &__front {}
+  &__back {display:none;}
+
+  &__text {
+  	margin:0;
+    padding:0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: bold;
+    font-size:22px;
+    line-height:30px;
+    letter-spacing:0.025em;
+
+    & .blank {
+      position:relative;
+      top:-3px;
+      border-bottom:3px solid #fff;
+      color:#000;
+    }
+
+  }
+
+  &__tm {
+  	position:relative;
+  	top:-10px;
+  	font-size: 12px;
+  }
+
+}
